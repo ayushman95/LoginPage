@@ -47,7 +47,7 @@ function myFunction() {
         users.push(userData);
         localStorage.setItem('Users', JSON.stringify(users));
         alert("User/Admin succesfully added to local storage");
-        location.reload();
+        
     }
 
    //Login Credentials Check
@@ -88,14 +88,14 @@ function myFunction() {
                             return;
                 }
                 //Super Admin
-                else if (User === u && Pass ===p){
+                else if (User === u && Pass ===p && storedProfile != "User"){
                     alert("Super Admin");
                     window.location.href = "SuperAdmin.html";
                     return;
                 }
             }
         alert('Invalid Username or Password! Please try again.');
-        location.reload();
+        
         }
       
         //onload redirect
@@ -162,7 +162,7 @@ function editCheck(){
                 
                 localStorage.setItem('Users', JSON.stringify(users));
                 alert("User/Admin succesfully added to local storage");
-                location.reload();
+                
                
 }
     }
