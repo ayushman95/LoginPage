@@ -33,7 +33,7 @@ function myFunction() {
         users.push(userData);
         localStorage.setItem('Users', JSON.stringify(users));
         alert("User/Admin succesfully added to local storage");
-        location.reload();
+      
     }
 
     function storeAdmin(){
