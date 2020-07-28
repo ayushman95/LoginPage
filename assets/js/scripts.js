@@ -63,7 +63,7 @@ function myFunction() {
             var storedPassWord = users[i].password;
             var storedProfile = users[i].profile;
                 //User profile
-                if (User == storedUserName && Pass == storedPassWord && storedProfile != "Admin"){
+                if (User == storedUserName && Pass == storedPassWord && storedProfile == "User"){
                     alert("User");
                     var testObject ={
                         name: document.getElementById("username2").value,
