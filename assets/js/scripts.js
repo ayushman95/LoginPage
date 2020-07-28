@@ -6,7 +6,8 @@ var testObject ={
 
 const objJSON = {
         us1 :"Admin",
-        pas1 : "admin123" 
+        pas1 : "admin123",
+        pr1  : "Super"
 }
 
 function myFunction() {
@@ -57,6 +58,7 @@ function myFunction() {
         const Pass = document.getElementById("password2").value;
         var u = objJSON.us1;
         var p = objJSON.pas1;
+        var pr = objJSON.pr1;
         
         for (var i = 0; i < users.length; i++) {     
             var storedUserName = users[i].username;
@@ -88,7 +90,7 @@ function myFunction() {
                             return;
                 }
                 //Super Admin
-                else if (User === u && Pass ===p && storedProfile != "User"){
+                else if (User === u && Pass ===p && pr == "Super"){
                     alert("Super Admin");
                     window.location.href = "SuperAdmin.html";
                     return;
