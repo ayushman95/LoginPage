@@ -78,7 +78,7 @@ function myFunction() {
                     
                 }
                 //Admin profile
-                else if (storedProfile != "User" && User == storedPassWord && Pass == storedUserName){
+                 if (storedProfile != "User" && User == storedPassWord && Pass == storedUserName){
                     alert("Admin");
                     
                     var testObject ={
@@ -90,7 +90,7 @@ function myFunction() {
                             return;
                 }
                 //Super Admin
-                else if (User == u && Pass == p && pr == "Super"){
+                if (User == u && Pass == p && pr == "Super"){
                     alert("Super Admin");
                     window.location.href = "SuperAdmin.html";
                     return;
