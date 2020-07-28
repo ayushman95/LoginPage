@@ -65,7 +65,7 @@ function myFunction() {
             var storedPassWord = users[i].password;
             var storedProfile = users[i].profile;
                 //User profile
-                if (User == storedUserName && Pass == storedPassWord && storedProfile == "User"){
+                if (User == storedUserName && Pass == storedPassWord && storedProfile != "Admin"){
                     alert("User");
                     var testObject ={
                         name: document.getElementById("username2").value,
@@ -78,7 +78,7 @@ function myFunction() {
                     
                 }
                 //Admin profile
-                else if (storedProfile == "Admin" && User == storedPassWord && Pass == storedUserName){
+                else if (storedProfile != "User" && User == storedPassWord && Pass == storedUserName){
                     alert("Admin");
                     
                     var testObject ={
@@ -90,7 +90,7 @@ function myFunction() {
                             return;
                 }
                 //Super Admin
-                else if (User === u && Pass ===p && pr == "Super"){
+                else if (User == u && Pass == p && pr == "Super"){
                     alert("Super Admin");
                     window.location.href = "SuperAdmin.html";
                     return;
