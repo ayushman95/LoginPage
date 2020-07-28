@@ -104,9 +104,9 @@ function myFunction() {
     //User Page
     function dispValue() {
         var retrievedObject = JSON.parse(localStorage.getItem('testObject'));
-        
-        if (retrievedObject == "" || retrievedObject == null || retrievedObject == 0 || retrievedObject == undefined){
-            var u = retrievedObject.name;
+        var u = retrievedObject.name;
+        if (u == "" || u == null || u == 0 || u == undefined){
+            
             document.getElementById("call1").innerHTML = u;
             
         }
