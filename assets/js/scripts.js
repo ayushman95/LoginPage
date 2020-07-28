@@ -33,7 +33,7 @@ function myFunction() {
         users.push(userData);
         localStorage.setItem('Users', JSON.stringify(users));
         alert("User/Admin succesfully added to local storage");
-        window.location.href="https://login124.netlify.app/index.html";
+        window.location.href="index.html";
     }
 
     function storeAdmin(){
