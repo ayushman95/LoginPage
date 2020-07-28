@@ -71,7 +71,7 @@ function myFunction() {
                     }
                     localStorage.setItem('testObject', JSON.stringify(testObject));  
                     
-                    window.location.href="/Users/ayushmanmishra/Desktop/Login Page bootstrap/LandingPage(user).html";
+                    window.location.href="/LoginPage/LandingPage(user).html";
                     return;
                     
                 }
@@ -84,13 +84,13 @@ function myFunction() {
                         passCode: document.getElementById("password2").value
                     }
                     localStorage.setItem('testObject', JSON.stringify(testObject));  
-                    window.location.href = "/Users/ayushmanmishra/Desktop/Login Page bootstrap/Admin-Page.html"; 
+                    window.location.href = "/LoginPage/Admin-Page.html"; 
                             return;
                 }
                 //Super Admin
                 else if (User === u && Pass ===p){
                     alert("Super Admin");
-                    window.location.href = "/Users/ayushmanmishra/Desktop/Login Page bootstrap/SuperAdmin.html";
+                    window.location.href = "/LoginPage/SuperAdmin.html";
                     return;
                 }
             }
@@ -111,7 +111,7 @@ function myFunction() {
             
         }
         else{
-            window.location.href="/Users/ayushmanmishra/Desktop/Login Page bootstrap/index.html";
+            window.location.href="/LoginPage/index.html";
         }
         
        
@@ -122,7 +122,7 @@ function myFunction() {
         var u = objJSON.us1;
         
         if (u == null || u == ""){
-            window.location.href="/Users/ayushmanmishra/Desktop/Login Page bootstrap/index.html";
+            window.location.href="/LoginPage/index.html";
         }
         else{
             document.getElementById("cal1").innerHTML = u;
@@ -134,7 +134,7 @@ function myFunction() {
         localStorage.removeItem("testObject");
        
         alert("You have successfully logged out")
-        window.location.href ="/Users/ayushmanmishra/Desktop/Login Page bootstrap/index.html";
+        window.location.href ="/LoginPage/index.html";
     }
 
 // Replace credentials on Array   
