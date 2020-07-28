@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<header>
+        <span>Super Admin Profile</span>
+        <script type="text/javascript" src="/Users/ayushmanmishra/Desktop/Login Page bootstrap/assets/js/scripts.js"></script>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+       
+</header>
+<body onload="dispadmin()">
+    <div id="con1">
+        <h1>Welcome Super Admin</h1>
+        <div class="user" id="us1">Your Username :<span id="cal1"> </span></div>
+      
+        <button type="button" onclick="logOut()" id="logout">Logout</button>
+        <!--Add new user or admin-->    
+        <div class="register-form">
+        <form>
+            <h2>Add New User/Admin</h2>
+                <input type="text" name="username" id="username" placeholder="username"><br>
+                <input type="password" name="password" id="password" placeholder="password"><br>
+                <label>Select Profile</label><br>
+                        <select name ="profile" id = "profile">
+                        <option value = "User">User</option>
+                        <option value = "Admin">Admin</option>
+                        </select>
+                        <br><br> 
+            
+                <button type="submit" onclick="storeAdmin()">ADD USER</button>
+        </form>
+</div>
+</body>
+</html>
